@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "first_test"
+version = "0.1.0"
+description = ""
+authors = ["juanmarcos <juan.cabezas@slash-digital.io>"]
+license = "Proprietary"
+
+packages = [
+    {include = "first_test"},
+]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+modelw-preset-django = {extras = ["celery", "channels"], version = ">=2023.4.0b1,<2023.7.0", allow-prereleases = true}
+drf-spectacular = {extras = ["sidecar"], version = "^0.26.2"}
+
+[tool.poetry.dev-dependencies]
+black = "*"
+isort = "*"
+ipython = "*"
+
+[tool.isort]
+profile = "black"
+known_first_party = "first_test"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
