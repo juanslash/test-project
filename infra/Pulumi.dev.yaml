@@ -1,0 +1,5 @@
+config:
+  digitalocean:token:
+    secure: AAABADe74Cys/Uv/4Myxhd+Y0bup7H+VkKaWszBXOSMInq51bM/5XHkWTmiH3fcbKv7Y1l44K9Ht3bheVyaWyio3947gl7sN8Cz1SMeQHB4j23OHEyUyF29ULBCelrIR0P9xVGCq1g==
+  test-project:branch: main
+  test-project:repo: juanslash/test-project
